@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colo Vaper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Colo Vaper Logo" id="logo">
+        <h1></h1>
+    </header>
+
+    <main>
+        <section id="admin-panel">
+            <h2>Agregar Producto</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Nombre del producto" required>
+                <input type="number" id="product-price" placeholder="Precio" required>
+                <input type="number" id="product-stock" placeholder="Stock" required>
+                <select id="product-category" required>
+                    <option value="">Seleccionar Categoría</option>
+                    <option value="kits">KITS INICIO</option>
+                    <option value="pods">PODS RECARGABLES</option>
+                    <option value="baterias">BATERÍAS</option>
+                    <option value="cargadores">CARGADORES</option>
+                    <option value="mods">MODS</option>
+                    <option value="accesorios">ACCESORIOS</option>
+                </select>
+                <input type="file" id="product-image" accept="image/*" required>
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </section>
+
+        <section id="products">
+            <h2>Productos</h2>
+            <div id="kits" class="category">
+                <h3>KITS INICIO</h3>
+                <div class="product-list"></div>
+            </div>
+            <div id="pods" class="category">
+                <h3>PODS RECARGABLES</h3>
+                <div class="product-list"></div>
+            </div>
+            <div id="baterias" class="category">
+                <h3>BATERÍAS</h3>
+                <div class="product-list"></div>
+            </div>
+            <div id="cargadores" class="category">
+                <h3>CARGADORES</h3>
+                <div class="product-list"></div>
+            </div>
+            <div id="mods" class="category">
+                <h3>MODS</h3>
+                <div class="product-list"></div>
+            </div>
+            <div id="accesorios" class="category">
+                <h3>ACCESORIOS</h3>
+                <div class="product-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>COLO VAPER</p>
+        <a href="https://www.instagram.com/colovaper_shop" target="_blank">
+            <img src="logoinsta.jpg" alt="Instagram">
+        </a>
+        <a href="https://wa.me/tu_numero" target="_blank">
+            <img src="logowhats.jpg" alt="WhatsApp">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
